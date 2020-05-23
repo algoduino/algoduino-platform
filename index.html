@@ -50,11 +50,13 @@
             <a class="navbar-item" href="https://algoduino.com">
                 <strong>Algoduino</strong>
             </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample"
+                onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
 
         <div id="navbarExampleTransparentExample" class="navbar-menu">
@@ -111,7 +113,6 @@
             <h1 class="title" style="padding-bottom: 0.5em;">Available everywhere
             </h1>
             <div class="columns is-multiline is-vcentered">
-
                 <div class="column">
                     <img src="assets/arduino-logo.png" width="20%">
                 </div>
@@ -130,15 +131,15 @@
         </div>
     </section>
     <section class="section">
-        <div class="container" style="padding-top: 5%;">
-            <div class="columns has-text-centered is-multiline is-centered">
-                <div class="column" style="padding: 19%; padding-top: 0; padding-bottom: 0;">
-                    <h1 class="title" style="padding-bottom: 0.5em;">Simple example to get started
-                    </h1>
+        <div class="container has-text-centered" style="padding-top: 5%;">
+            <h1 class="title" style="padding-bottom: 0.5em;">Simple example to get started
+            </h1>
+            <div class="columns">
+                <div class="column">
                     <script src="https://gist.github.com/TedNIVAN/ef622a78f90406db215a2addb5c57a9c.js"></script>
                 </div>
             </div>
-            <div class="columns has-text-centered is-vcentered">
+            <div class="columns">
                 <div class="column">
                     <img src="assets/serial-monitor.gif">
                 </div>
